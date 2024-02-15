@@ -9,7 +9,7 @@ void main(){
 
 // ignore: must_be_immutable
 class MyApp extends StatelessWidget {
-  String titleOfTabApp = 'TODO App';
+  String titleOfTabApp = 'TODO';
 
   MyApp({super.key}); 
 
