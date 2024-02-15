@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: Mytheme.myTheme,
       initialRoute: HomeScreen.routesName,
       routes: {
-        HomeScreen.routesName:(context) => HomeScreen(),
+        HomeScreen.routesName:(context) => const HomeScreen(),
       },
       locale: const Locale('en'),
     );
