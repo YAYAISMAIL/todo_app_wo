@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         HomeScreen.routesName: (context) => const HomeScreen(),
       },
-      locale: const Locale('ar'),
+      locale: const Locale('en'),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
     );
