@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:todo_two/HomeScreen/home_screen.dart';
 import 'package:todo_two/theme.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-void main(){
-  runApp( MyApp());
+void main() {
+  runApp(MyApp());
 }
-
 
 // ignore: must_be_immutable
 class MyApp extends StatelessWidget {
   String titleOfTabApp = 'TODO App';
 
-  MyApp({super.key}); 
+  MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +21,11 @@ class MyApp extends StatelessWidget {
       theme: Mytheme.myTheme,
       initialRoute: HomeScreen.routesName,
       routes: {
-        HomeScreen.routesName:(context) => const HomeScreen(),
+        HomeScreen.routesName: (context) => const HomeScreen(),
       },
-      locale: const Locale('en'),
+      locale: const Locale('ar'),
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
     );
   }
 }

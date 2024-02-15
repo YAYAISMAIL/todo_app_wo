@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_two/theme.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 // ignore: must_be_immutable
 class HomeScreen extends StatefulWidget {
@@ -18,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Title OF Content'),
+        title: Text(AppLocalizations.of(context)!.app_title),
       ),
       body: Container(color: Mytheme.backgroundColorLight),
       bottomNavigationBar: BottomNavigationBar(
@@ -27,15 +28,15 @@ class _HomeScreenState extends State<HomeScreen> {
             setState(() {});
           },
           currentIndex: navIndex,
-          items: const [
+          items: [
             BottomNavigationBarItem(
-                icon:
-                    ImageIcon(AssetImage('assets/icon/Icon awesome-list.png')),
-                label: 'ico1'),
+                icon: const ImageIcon(
+                    AssetImage('assets/icon/Icon awesome-list.png')),
+                label: AppLocalizations.of(context)!.nav_btn_0),
             BottomNavigationBarItem(
-                icon: ImageIcon(
+                icon: const ImageIcon(
                     AssetImage('assets/icon/Icon feather-settings.png')),
-                label: 'ico1'),
+                label: AppLocalizations.of(context)!.nav_btn_1),
           ]),
     );
   }
