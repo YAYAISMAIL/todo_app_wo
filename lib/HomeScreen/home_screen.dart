@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todo_two/Sttings/sttinges_tab.dart';
+import 'package:todo_two/ToDoTab/todo_tab.dart';
 import 'package:todo_two/theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -41,7 +43,5 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  List<Widget> MyTabs = [
-    
-  ];
+  List<Widget> MyTabs = [TodoTab(), SettingsTab()];
 }
