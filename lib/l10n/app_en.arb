@@ -1,5 +1,10 @@
 {
     "app_title": "ToDo List",
     "nav_btn_0": "My-List",
-    "nav_btn_1": "Settings"
+    "nav_btn_1": "Settings",
+    "lang": "Language",
+    "english": "English",
+    "arabic": "Arabic",
+    "app_mode": "App Mode"
+    
 }

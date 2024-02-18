@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_two/Sttings/sttinges_tab.dart';
 import 'package:todo_two/ToDoTab/todo_tab.dart';
-import 'package:todo_two/theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 // ignore: must_be_immutable
@@ -23,7 +22,8 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)!.app_title),
       ),
-      body: Container(color: Mytheme.backgroundColorLight),
+      body: myTabs[navIndex],
+
       bottomNavigationBar: BottomNavigationBar(
           onTap: (value) {
             navIndex = value;
@@ -43,5 +43,5 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  List<Widget> MyTabs = [TodoTab(), SettingsTab()];
+  List<Widget> myTabs = [TodoTab(), SettingsTab()];
 }
